@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="calculatorTM.css">
+	<title></title>
+</head>
+<body>
+
+<div id="calculator">
+
+	<div class="top">
+		<span class="clear" onclick="document.getElementById('screen').innerHTML = ' '">C</span>
+		<div id="screen"></div>
+	</div>
+	
+	<div class="keys">
+
+		<span onclick="document.getElementById('screen').innerHTML += '7'">7</span>
+		<span onclick="document.getElementById('screen').innerHTML += '8'">8</span>
+		<span onclick="document.getElementById('screen').innerHTML += '9'">9</span>
+		<span onclick="document.getElementById('screen').innerHTML += '+'" class="operator">+</span>
+
+		<span onclick="document.getElementById('screen').innerHTML += '4'">4</span>
+		<span onclick="document.getElementById('screen').innerHTML += '5'">5</span>
+		<span onclick="document.getElementById('screen').innerHTML += '6'">6</span>
+		<span onclick="document.getElementById('screen').innerHTML += '-'" class="operator">-</span>
+		<span onclick="document.getElementById('screen').innerHTML += '1'">1</span>
+		<span onclick="document.getElementById('screen').innerHTML += '2'">2</span>
+		<span onclick="document.getElementById('screen').innerHTML += '3'">3</span>
+		<span onclick="document.getElementById('screen').innerHTML += '&divide;'" class="operator">&divide;</span>
+
+		<span onclick="document.getElementById('screen').innerHTML += '0'">0</span>
+		<span onclick="document.getElementById('screen').innerHTML += '.'">.</span>
+
+		<span onclick="document.getElementById('screen').innerHTML = eval(document.getElementById('screen').innerHTML)" class="eval">=</span>
+		<span onclick="document.getElementById('screen').innerHTML += 'x'" class="operator">x</span>
+
+	</div>
+</div>
+
+
+</body>
+</html>
